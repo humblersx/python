@@ -21,6 +21,7 @@ first_color = colors[random.randint(0, 11)]
 rgb = first_color.rgb
 tim.pencolor(rgb[0], rgb[1], rgb[2])
 
+# Get colors from image.png
 colors = colorgram.extract('image.png', 30)
 x = 1
 while x < 11:
