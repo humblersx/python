@@ -9,6 +9,7 @@ screen.bgcolor("black")
 screen.title("My Snake Game")
 screen.tracer(0)
 
+# Create snake
 snake = Snake()
 
 screen.listen()
@@ -22,10 +23,12 @@ screen.onkey(snake.right, "Right")
 
 game_is_on = True
 
+# While game is on
 while game_is_on:
     screen.update()
     time.sleep(0.1)
 
+    # enable control to move snake
     snake.move()
 
 screen.exitonclick()
