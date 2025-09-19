@@ -26,17 +26,18 @@ screen.onkey(snake.right, "Right")
 
 
 game_is_on = True
+time.sleep(3)
 
 # While game is on
 while game_is_on:
     screen.update()
-    time.sleep(0.1)
+    time.sleep(0.09)
 
     # enable control to move snake
     snake.move()
 
     # Detect collision with food
-    if snake.head.distance(food) < 16:
+    if snake.head.distance(food) < 17:
         food.refresh()
         snake.extend()
         scoreboard.increase_score()

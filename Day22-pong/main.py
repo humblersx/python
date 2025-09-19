@@ -80,6 +80,7 @@ while game_is_on:
         scoreboard.increase_l_score()
         # reset ball
         ball.goto(0,0)
+        ball.move_speed = 0.1
         time.sleep(1.0)
         ball.move_sw()
     # Detect when left paddle misses
