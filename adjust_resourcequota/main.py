@@ -1,6 +1,7 @@
 from kubernetes import client, config, watch
 import time
 
+NAMESPACE = default
 # Load kubeconfig (use config.load_incluster_config() if running inside cluster)
 config.load_kube_config()
 
@@ -44,7 +45,7 @@ def adjust_resourcequota(namespace, rq):
 def monitor_resourcequotas():
     #
     #namespaces = [ns.metadata.name for ns in v1.list_namespace().items]
-    namespaces = ["88790d110937-rq-dev"]
+    namespaces = [NAMESPACE]
     for ns in namespaces:
         # Get RQ data from a namespace
         rqs = get_resourcequotas(ns)
