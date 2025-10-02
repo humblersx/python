@@ -57,7 +57,7 @@ while game_is_on:
         score += 1
     elif answer_state == "Exit":
         game_is_on = False
-        difference_states = list(set(list_of_states) - set(guessed_states))
+        difference_states = [state for state in list_of_states if state not in guessed_states]
         new_data = pandas.DataFrame(difference_states)
         new_data.to_csv("missing_states.csv")
 
@@ -67,6 +67,7 @@ while game_is_on:
         final.hideturtle()
         final.goto(0, 0)
         final.write("You win! You have guessed all 50 states!", align=ALIGNMENT, font=FONT)
+        time.sleep(10)
         game_is_on = False
 
 
