@@ -2,7 +2,7 @@ from tkinter import *
 
 window = Tk()
 window.title("Mile To Km Converter")
-window.minsize(width=500, height=300)
+
 window.config(padx=20, pady=20)
 
 # Labels
@@ -23,10 +23,10 @@ input = Entry(width=8)
 input.grid(row=0, column=1)
 
 def button_clicked():
-    intput = int(input.get())
+    floatput = float(input.get())
     # Distance covered in km = (n x 1.609344) kilometers
-    answer = round(intput * 1.609344, 2)
-    km.config(text=answer)
+    answer = round(floatput * 1.609344, 2)
+    km.config(text=f"{answer}")
 
 
 # Button
