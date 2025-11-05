@@ -7,8 +7,8 @@ MY_LAT = 39.961178
 MY_LONG = -82.998795
 
 
-account_sid = "<ACCOUNT_SID>"
-auth_token = "<AUTH_TOKEN>"
+#account_sid = "<ACCOUNT_SID>"
+#auth_token = "<AUTH_TOKEN>"
 
 
 
