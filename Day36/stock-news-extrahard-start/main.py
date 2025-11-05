@@ -40,7 +40,7 @@ if diff_percent > 1:
         "qInTitle": "tesla",
         "language": "en",
         "sortBy": "publishedAt",
-        "apiKey": "311c4306b2194f2b901036d9371dea42"
+        "apiKey": "<API_KEY>"
     }
 
     news_response = requests.get("https://newsapi.org/v2/everything", params=news_parameters)
