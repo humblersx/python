@@ -7,7 +7,7 @@ MY_LAT = 39.961178
 MY_LONG = -82.998795
 
 
-account_sid = "ACf54e34e90fd4a4f6a492b6ef474a4f2b"
+account_sid = "<ACCOUNT_SID>"
 auth_token = "<AUTH_TOKEN>"
 
 

@@ -4,7 +4,7 @@ from twilio.rest import Client
 STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
 
-account_sid = "ACf54e34e90fd4a4f6a492b6ef474a4f2b"
+account_sid = "<ACCOUNT_SID>"
 auth_token = "<AUTH_TOKEN>"
 
 ## STEP 1: Use https://www.alphavantage.co
