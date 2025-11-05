@@ -5,14 +5,14 @@ STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
 
 account_sid = "ACf54e34e90fd4a4f6a492b6ef474a4f2b"
-auth_token = "048afe528e9a4743debe8ab6b24b6494"
+auth_token = "<AUTH_TOKEN>"
 
 ## STEP 1: Use https://www.alphavantage.co
 # When STOCK price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").
 parameters = {
     "function": "TIME_SERIES_DAILY",
     "symbol": STOCK,
-    "apikey": "LFXTY1MVK4JNSH96"
+    "apikey": "<API_KEY>"
 }
 
 response = requests.get("https://www.alphavantage.co/query", params=parameters)
